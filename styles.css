@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222831;
+    margin: 0px;
+    color: #eeeeee;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #00ADB5;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #00ADB5;
+}
+
+a:hover {
+    color: white;
+}
+
+.wrapper {
+    width: 720px;
+    padding-top: 225px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 200px;
+}
+
+/* SECTION PERTAMA */
+
+.intro {
+    text-align: left;
+}
+
+.foto-profil {
+    float: right;
+    border-radius: 100%;
+    margin-left: 30px;
+}
+
+.btn {
+    margin: 0 12px 20px ;
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 1;
+  }
+
+.fa {
+    margin-right: 5px;
+}
+
+.btn-email span {
+    background-color: #00ADB5;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+.btn-email:hover span {
+    opacity: 1;
+}
+
+.title {
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-family: Caveat, cursive;
+    display: block;
+}
+
+/* SECTION KEDUA */
+
+.skill-row {
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.freelancer-skill-img {
+    float: left;
+    margin-right: 30px;
+}
+
+.programmer-skill-img {
+    float: right;
+    margin-left: 30px;
+}
+
+/* SECTION KETIGA */
+
+.cta-text {
+    width: 68%;
+    margin: 0 auto 12px auto;
+}
+
+/* BTN WRAPPER */
+
+.btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.whatsapp {
+    background-color: #239b76;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.instagram {
+    background-color: #ff1493;
+}
+
+.linkedin {
+    background-color: #0e76a8;
+}
+.footer-text {
+    font-size: 14px;
+    margin-top: 30px;
+}
