@@ -1,9 +1,98 @@
-/* Untuk Tablet */
-@media all and (max-width: 1000px) {
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding-top: 50px;
+        width: 95%;
+    }
 
+    .section:first-child {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    .foto-profil {
+        width: 160px;
+        height: 160px;
+    }
+
+    .skill-row,
+    .skill-row:nth-child(even) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skill-row img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .section {
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }
 
-/* Untuk Smartphone */
-@media all and (max-width: 670px) {
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .wrapper {
+        padding-top: 30px;
+    }
+
+    .foto-profil {
+        width: 140px;
+        height: 140px;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .btn-email span {
+        padding: 10px 20px;
+    }
+
+    .skill-row img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn-wrapper .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-wrapper .btn {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Print */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
     
-  }
+    .btn-wrapper {
+        display: none;
+    }
+}
