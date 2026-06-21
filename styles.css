@@ -1,109 +1,189 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #222831;
-    margin: 0px;
     color: #eeeeee;
     text-align: center;
     font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 h1 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
 }
 
 h2 {
     color: #00ADB5;
+    margin-bottom: 10px;
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 a {
     text-decoration: none;
     color: #00ADB5;
+    transition: color 0.3s;
 }
 
 a:hover {
     color: white;
 }
 
+/* WRAPPER RESPONSIF */
 .wrapper {
-    width: 720px;
-    padding-top: 225px;
+    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
+    padding-top: 80px;
 }
 
 .section {
-    margin-bottom: 200px;
+    margin-bottom: 80px;
 }
 
-/* SECTION PERTAMA */
+/* SECTION PERTAMA - FLEX LAYOUT */
+.section:first-child {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .intro {
     text-align: left;
+    flex: 1;
+    min-width: 250px;
 }
 
 .foto-profil {
-    float: right;
-    border-radius: 100%;
-    margin-left: 30px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #00ADB5;
+    flex-shrink: 0;
 }
 
+.title {
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+    display: block;
+    line-height: 1.2;
+}
+
+/* BUTTON */
 .btn {
-    margin: 0 12px 20px ;
+    margin: 8px 8px 15px;
     padding: 12px 24px;
     color: white;
     display: inline-block;
-    opacity: 0.8;
-    border-radius: 4px;
+    opacity: 0.85;
+    border-radius: 6px;
     text-align: center;
+    transition: opacity 0.3s, transform 0.2s;
 }
 
 .btn:hover {
     opacity: 1;
-  }
+    transform: translateY(-2px);
+}
 
 .fa {
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 .btn-email span {
     background-color: #00ADB5;
     color: white;
     padding: 12px 30px;
-    border-radius: 5px;
+    border-radius: 6px;
     display: inline-block;
-    opacity: 0.8;
+    opacity: 0.85;
+    transition: opacity 0.3s, transform 0.2s;
 }
 
 .btn-email:hover span {
     opacity: 1;
+    transform: translateY(-2px);
 }
 
-.title {
-    font-size: 4.5rem;
-    font-weight: bold;
-    font-family: Caveat, cursive;
-    display: block;
-}
-
-/* SECTION KEDUA */
-
+/* SECTION KEDUA - SKILL */
 .skill-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
     text-align: left;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
-.freelancer-skill-img {
-    float: left;
-    margin-right: 30px;
+.skill-row img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
-.programmer-skill-img {
+.skill-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* SECTION KETIGA */
+.cta-text {
+    max-width: 500px;
+    margin: 0 auto 15px;
+}
+
+/* BTN WRAPPER */
+.btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 15px;
+}
+
+.btn-wrapper .section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.facebook {
+    background-color: #1877F2;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.linkedin {
+    background-color: #0077B5;
+}
+
+.footer-text {
+    font-size: 13px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    opacity: 0.7;
+}
+
+.footer-text a {
+    color: #00ADB5;
+}.programmer-skill-img {
     float: right;
     margin-left: 30px;
 }
